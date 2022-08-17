@@ -5,7 +5,7 @@ import (
 )
 
 func TestGetSecret(t *testing.T) {
-	secret, err := get("core-359619", "google-secret-integration-test")
+	secret, err := Get("core-359619", "google-secret-integration-test")
 	expectedString := "All right, then.  Keep your secrets."
 	if err != nil {
 		t.Error(err)
